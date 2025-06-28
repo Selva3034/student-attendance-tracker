@@ -1,0 +1,267 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height page layout */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa; /* light gray-blue */
+  color: #222;
+}
+
+/* Wrapper that pushes footer to bottom */
+.wrapper {
+  min-height: calc(100vh - 60px); /* 60px = footer height */
+  padding-bottom: 2rem;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem 1.2rem;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar a,
+.hamburger {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #005fa3;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar a:hover,
+.hamburger:hover {
+  background-color: #004a85;
+}
+
+/* Overlay Menu */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.overlay ul {
+  list-style: none;
+}
+
+.overlay ul li {
+  margin: 1rem 0;
+}
+
+.overlay ul li a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Main Heading */
+.main-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Feature Section Box */
+.feature-box {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.scroll-box {
+  max-width: 90%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-box ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.scroll-box li {
+  margin-bottom: 0.6rem;
+}
+
+/* Buttons (CTA Style) */
+.cta-btn {
+  display: block;
+  width: fit-content;
+  margin: 1.2rem auto 0 auto;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Attendance Form Section */
+.attendance-section {
+  padding: 2rem 1.2rem;
+  background-color: #ffffff;
+}
+
+.attendance-section h1 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 1.2rem;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+.btn-group {
+  text-align: center;
+}
+.btn-group button {
+  margin: 0.5rem;
+}
+
+/* Attendance Calculator Page */
+.calculator-section {
+  padding: 2rem 1.2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.result-box {
+  background-color: #f0f4f8;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.result-box p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+#copy-btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#copy-btn:hover {
+  background-color: #005fa3;
+}
+
+/* 🔴 Reset Button Style */
+#reset-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background-color: #cc0000;
+}
+
+/* 🟢 Download Button Style */
+#download-txt-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+#download-txt-btn:hover {
+  background-color: #1f7e34;
+}
+
+/* Footer (Sticky bottom setup) */
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  height: 60px;
+}
+
+/* Responsive Layout */
+@media (min-width: 600px) {
+  .hero,
+  .attendance-section,
+  .calculator-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

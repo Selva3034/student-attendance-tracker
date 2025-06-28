@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Marker</title>
+    <link rel="stylesheet" href="styles.css"><!-- this is a CSS link-->
+</head>
+<body>
+    <!-- this is a navigation bar-->
+    <nav class="navbar" role="navigation">
+        <span class="logo">Student Attendance Tracker</span>
+        <button class="hamburger" id="menu-btn">☰</button>
+    </nav>
+
+    <!--Overlay menu-->
+    <div class="overlay" id="menu-overlay">
+        <ul>
+            <li><a href="attendance.html">Attendance Marker</a></li>
+            <li><a href="calculator.html">Attendance Calculator</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <!-- table section-->
+    <main>
+        <section class="attendance-section">
+            <h1>Mark Your Attendance</h1>
+            <form id="attendance-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="period">Period:</label>
+                <select id="period" name="period" required>
+                    <option value="">Select Period</option>
+                    <option value="all">All Period</option>
+                    <option value="1">Period 1</option>
+                    <option value="2">Period 2</option>
+                    <option value="3">Period 3</option>
+                    <option value="4">Period 4</option>
+                    <option value="5">Period 5</option>x
+                </select>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="">Select Status</option>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                    <option value="holiday">Holiday</option>
+                </select>
+
+                <button type="submit">Submit Attendance</button>
+            </form>
+
+            <div id="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Attendance Tracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

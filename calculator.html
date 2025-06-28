@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="styles.css"><!-- this is a CSS link-->
+</head>
+<body>
+    <nav class="navbar" role="navigation">
+        <span class="logo">Student Attendance Tracker</span>
+        <button class="hamburger" id="menu-btn">☰</button>
+    </nav>
+
+    <!--Overlay menu-->
+    <div class="overlay" id="menu-overlay">
+        <ul>
+            <li><a href="attendance.html">Attendance Marker</a></li>
+            <li><a href="calculator.html">Attendance Calculator</a></li>
+            <li><a href="index.html" class="home-btn">Home</a></li>
+        </ul>
+    </div>
+
+    <main>
+    <section class="calculator-section">
+        <h1>Your Attendance Summary</h1>
+
+        <div class="result-box">
+            <p><strong>✅ Days Present:</strong> <span id="days-present">0</span></p>
+            <p><strong>❌ Days Absent:</strong> <span id="days-absent">0</span></p>
+            <p><strong>📊 Attendance Percentage:</strong> <span id="percentage">0%</span></p>
+        </div>
+
+        <div class="btn-group">
+            <button id="copy-btn">📋 Copy Result</button>
+            <button id="reset-btn">🗑️ Reset Attendance</button>
+            <button id="download-txt-btn">⬇️ Download Attendance (.txt)</button>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2025 Student Attendance Tracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
